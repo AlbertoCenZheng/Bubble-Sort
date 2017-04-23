@@ -27,6 +27,27 @@ public class BubbleSort {
 			myArray[i] = something.nextInt(10);
 		
 	}
+	
+	
+
+	//Sort an unsorted list with Bubble sort;
+	//take in an array as argument;
+	public static void BubbleSort(int[] myArray) {
+		// sort the myArray; BUBBLE SORT;
+		for (int i = 1; i < myArray.length; i++) {
+			int j = i;
+			//compare to the rest of the sorted list;
+			while (j >= 1) {
+				//test if the sorted list is greater that the current item;
+				if (myArray[j - 1] > myArray[j]) {
+					int temp = myArray[j];
+					myArray[j] = myArray[j - 1];
+					myArray[j - 1] = temp;
+				}
+				j--;
+			}
+		}
+	}
 
 
 	public static void main(String[] args) {

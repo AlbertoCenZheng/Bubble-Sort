@@ -66,10 +66,14 @@ public class BubbleSort {
 	}
 
 
-
-	public static void main(String[] args) {
+    //main method (testing)
+ 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-
-
+		int []myArray = new int[10]; //create and initialize the size of the array;
+		randomPopulate(myArray);    //populate the array
+		printArray(myArray);        // print the unsorted list
+		BubbleSort(myArray);        //Sort with bubble sort
+		System.out.println(""); 		// line break;
+		printArray(myArray);       //print the sorted list
 	}
 }

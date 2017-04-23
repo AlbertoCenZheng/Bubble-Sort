@@ -48,6 +48,23 @@ public class BubbleSort {
 			}
 		}
 	}
+	
+	
+	//method for printing out the array(traverse through the list)
+	//take in an array as argument;
+	public static void printArray(int[] myArray) {
+		// print out the array
+		for (int i = 0; i < myArray.length; i++) {
+			System.out.print(myArray[i]);
+			//to separate the number;
+			//to make it looks clearer;
+			if (i < myArray.length - 1)//because of there is nothing more after the last item
+									   //no need to print out the last one;
+				System.out.print("->");
+		}
+
+	}
+
 
 
 	public static void main(String[] args) {
